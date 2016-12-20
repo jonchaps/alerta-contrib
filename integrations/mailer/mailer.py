@@ -60,6 +60,7 @@ DEFAULT_OPTIONS = {
     'mail_template':  os.path.dirname(__file__) + os.sep + 'email.tmpl',
     'mail_template_html': os.path.dirname(__file__) + os.sep + 'email.html.tmpl',  # nopep8
     'mail_subject':  ('[{{ alert.status|capitalize }}] {{ alert.environment }}: '
+                      'Customer {{ alert.customer }} - '
                       '{{ alert.severity|capitalize }} {{ alert.event }} on '
                       '{{ alert.service|join(\',\') }} {{ alert.resource }}'),
     'dashboard_url': 'http://try.alerta.io',

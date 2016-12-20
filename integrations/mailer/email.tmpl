@@ -1,11 +1,12 @@
 
 ------------------------------------------------------------
-[{{ alert.status|title }}] {{ alert.environment }}: {{ alert.severity|title }} {{ alert.event }} on {{ alert.service|join(', ') }} {{ alert.resource }}
+[{{ alert.status|title }}] {{ alert.environment }}: Customer {{ alert.customer }} - {{ alert.severity|title }} {{ alert.event }} on {{ alert.service|join(', ') }} {{ alert.resource }}
 ------------------------------------------------------------
 
 Alert ID: {{ alert.id }}
 Create Time: {{ alert.create_time }}
 Environment: {{ alert.environment }}
+Customer: {{ alert.customer }}
 Services: {{ alert.service|join(', ') }}
 Resource: {{ alert.resource }}
 Event: {{ alert.event }}
